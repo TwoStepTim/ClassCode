@@ -26,9 +26,17 @@
 }
 
 .logo-main {
-    width: 50px;
+    width: auto;
     height: auto;
 }
+
+a, button{
+    text-decoration: none !important;
+}
+a :hover{
+    color: white !important;
+}
+
 
 /* Mega Menu Mobile Adjustment */
 @media (max-width: 992px) {
@@ -41,6 +49,10 @@
     .mega-menu .img-fluid {
         max-width: 80px;
         margin: 0 auto;
+    }
+    .logo-main {
+        width: auto;
+        height: auto;
     }
 }
 
@@ -258,12 +270,14 @@ section {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
 .service-card img {
     width: 100%;
-    height: auto;
+    height: 200px; /* Set a fixed height for service card images */
+    object-fit: cover;
     border-bottom: 2px solid #66a568;
-}
 
+}
 .service-card h3 {
     font-size: 1.5rem;
     color: #388e3c;
@@ -318,6 +332,7 @@ section {
     height: 100%;
     display: flex;
     align-items: center;
+    margin-top: 30px;
     justify-content: center;
 }
 
@@ -333,11 +348,10 @@ section {
 }
 
 .promo-content img {
-    width: 100%;
-    max-width: 150px;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+    width: 200px;
+    height: 150px; /* Set a fixed height for promotion images */
+    object-fit: cover;
+    border-radius: 8px; /* Rounded corners for consistency */
 }
 
 .promo-card:hover img {
@@ -431,7 +445,9 @@ section {
 
 .event-image {
     width: 100%;
-    height: auto;
+    height: 250px; /* Set a consistent height for event images */
+    object-fit: cover;
+    border-radius: 8px;
     transition: transform 0.3s ease;
 }
 
@@ -555,9 +571,8 @@ section {
 .testimonial-img {
     width: 80px;
     height: 80px;
-    border-radius: 50%;
-    margin-bottom: 10px;
     object-fit: cover;
+    border-radius: 50%; /* Circular shape for profile images */
 }
 
 .testimonial-author h4 {
