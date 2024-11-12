@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Tim's Interactive Page</title>
+    <link rel=" icon" href="icon.jpg" type="image/x-icon">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        #content {
+            padding: 15px;
+            background-color: #e0f7fa;
+            border-radius: 5px;
+            max-width: 400px;
+            text-align: center;
+        }
+        button {
+            margin: 10px;
+            padding: 8px 15px;
+            font-size: 1em;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        #button1 {
+            background-color: #4caf50;
+            color: white;
+        }
+        #button2 {
+            background-color: #2196f3;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome, Tim!</h1>
+    <p id="content">Here’s a little interactive section made just for you. Try clicking the buttons below to see some magic!</p>
+
+    <button id="button1">Toggle the Message</button>
+    <button id="button2">Change Background Style</button>
+
+    <script>
+        $(document).ready(function(){
+            // Button 1: Toggle visibility of the personalized message with a slide effect
+            $("#button1").click(function(){
+                $("#content").slideToggle("slow", function() {
+                    if ($("#content").is(":visible")) {
+                        $("#button1").text("Hide the Message");
+                    } else {
+                        $("#button1").text("Show the Message");
+                    }
+                });
+            });
+
+            // Button 2: Change the background color and text style of the message
+            $("#button2").click(function(){
+                let currentColor = $("#content").css("background-color");
+                let newColor = currentColor === "rgb(224, 247, 250)" ? "#ffe0b2" : "#e0f7fa";
+                $("#content").css("background-color", newColor);
+
+                // text animation
+                $("#content").animate({
+                    fontSize: "1.1em",
+                    letterSpacing: "1px"
+                }, 200).animate({
+                    fontSize: "1em",
+                    letterSpacing: "0"
+                }, 200);
+            });
+        });
+    </script>
+
+</body>
+</html>

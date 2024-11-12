@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB-115 Final Project</title>
+    <link rel=" icon" href="icon.jpg" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for the banner */
+        .banner {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="banner">
+    Tim's Meal Planner - WEB-115 Final Project, Section 0001
+</div>
+
+<div class="container mt-4">
+    <h2>Build Your Meal Plan</h2>
+    <form id="mealPlanForm">
+        <!-- Personal Info -->
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="goal">Goal for the Week:</label>
+            <input type="text" class="form-control" id="goal">
+        </div>
+
+        <!-- Meal Plan Input -->
+        <h4>Weekly Meal Plan</h4>
+        <div class="row">
+            <!-- Loop through days of the week -->
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="monday">Monday:</label>
+                    <input type="text" class="form-control" id="mondayBreakfast" placeholder="Breakfast">
+                    <input type="text" class="form-control mt-1" id="mondaySnack" placeholder="Snack">
+                    <input type="text" class="form-control mt-1" id="mondayLunch" placeholder="Lunch">
+                    <input type="text" class="form-control mt-1" id="mondaySecondSnack" placeholder="Second Snack">
+                    <input type="text" class="form-control mt-1" id="mondayDinner" placeholder="Dinner">
+                </div>
+            </div>
+
+            <!-- Repeat the above block for each day (Tuesday - Sunday) -->
+            <!-- Example: Tuesday -->
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="tuesday">Tuesday:</label>
+                    <input type="text" class="form-control" id="tuesdayBreakfast" placeholder="Breakfast">
+                    <input type="text" class="form-control mt-1" id="tuesdaySnack" placeholder="Snack">
+                    <input type="text" class="form-control mt-1" id="tuesdayLunch" placeholder="Lunch">
+                    <input type="text" class="form-control mt-1" id="tuesdaySecondSnack" placeholder="Second Snack">
+                    <input type="text" class="form-control mt-1" id="tuesdayDinner" placeholder="Dinner">
+                </div>
+            </div>
+            <!-- Continue for other days of the week... -->
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="form-group mt-4">
+            <button type="button" class="btn btn-primary" onclick="generateMealPlan()">Generate Meal Plan</button>
+            <button type="reset" class="btn btn-secondary">Clear Plan</button>
+          
+        </div>
+    </form>
+</div>
+
+<!-- Bootstrap and JS scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="projectJS.js"></script>
+</body>
+</html>
