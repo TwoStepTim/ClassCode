@@ -692,3 +692,52 @@ section {
         justify-content: center;
     }
 }
+
+
+/* Registration Form Section */
+.registration-section {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+
+.registration-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.registration-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: #333;
+}
+
+.form-control {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn-main {
+    background-color: #66a568;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-main:hover {
+    background-color: #388e3c;
+}

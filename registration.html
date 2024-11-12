@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sprout & Grow | Home</title>
+    <title>Event Registration | Sprout & Grow</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/custom-styles.css"> <!-- Link to custom styles -->
@@ -67,69 +67,53 @@
 </header>
 
 
-<!-- About Us Section -->
-<section class="about-us-section py-5">
+<!-- Event Registration Form Section -->
+<section class="registration-section py-5">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <img src="images/about-us.jpg" class="img-fluid rounded mb-4" alt="Sprout & Grow Nursery">
+        <h2 class="text-center mb-4">Event Registration</h2>
+        <p class="text-center mb-5">Join us for our upcoming events by filling out the form below.</p>
+        
+        <form action="register-event.php" method="post" class="registration-form">
+            <!-- Name Field -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" class="form-control" required>
             </div>
-            <div class="col-lg-6">
-                <h2>About Sprout & Grow</h2>
-                <p>Sprout & Grow is a greenhouse nursery based in Raleigh, NC, committed to offering high-quality organic plants and promoting sustainable gardening practices. Our mission is to empower individuals to cultivate thriving, eco-friendly gardens by providing expert guidance and meticulously nurtured plants.</p>
-                <p>At Sprout & Grow, we prioritize transparency, integrity, and environmental stewardship. We believe in fostering a community of gardeners who value sustainability and organic practices.</p>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- Mission and Values Section -->
-<section class="mission-values-section py-5 bg-light">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h3>Our Mission & Values</h3>
-            <p>Committed to organic practices, Sprout & Grow inspires sustainable, eco-friendly gardening through trust, expertise, and community engagement.</p>
-        </div>
-        <div class="row">
-            <div class="col-md-6 mb-4">
-                <h4>Our Mission</h4>
-                <p>To be Raleigh's go-to nursery for organic plants, fostering an environmentally conscious gardening community. We offer a range of meticulously cared-for plants and resources to help our customers create beautiful, sustainable green spaces.</p>
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" class="form-control" required>
             </div>
-            <div class="col-md-6 mb-4">
-                <h4>Our Values</h4>
-                <ul>
-                    <li><strong>Transparency:</strong> Providing clear, honest information about our practices and products.</li>
-                    <li><strong>Integrity:</strong> Operating with respect and commitment to ethical gardening practices.</li>
-                    <li><strong>Environmental Stewardship:</strong> Fostering sustainable practices that support the ecosystem.</li>
-                    <li><strong>Community Engagement:</strong> Encouraging a shared passion for organic gardening among our customers.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- Our Audience Section -->
-<section class="audience-section py-5">
-    <div class="container">
-        <h3 class="text-center mb-5">Who We Serve</h3>
-        <div class="row">
-            <div class="col-md-3 text-center">
-                <h5>Home Gardeners</h5>
-                <p>Passionate individuals seeking quality organic plants for sustainable home gardens.</p>
+            <!-- Phone Number Field -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-control" required>
             </div>
-            <div class="col-md-3 text-center">
-                <h5>Environmental Enthusiasts</h5>
-                <p>Eco-conscious gardeners interested in minimizing their ecological footprint.</p>
+
+            <!-- Event Selection Dropdown -->
+            <div class="form-group">
+                <label for="event">Select Event</label>
+                <select id="event" name="event" class="form-control" required>
+                    <option value="">Choose an Event</option>
+                    <option value="gardening-workshop">Gardening Workshop</option>
+                    <option value="garden-festival">Seasonal Garden Festival</option>
+                    <option value="eco-gardening">Eco Gardening Seminar</option>
+                </select>
             </div>
-            <div class="col-md-3 text-center">
-                <h5>Urban Gardeners</h5>
-                <p>City dwellers looking to create green spaces in limited areas with innovative solutions.</p>
+
+            <!-- Preferences/Comments Field -->
+            <div class="form-group">
+                <label for="preferences">Preferences/Comments</label>
+                <textarea id="preferences" name="preferences" class="form-control" rows="4" placeholder="Let us know any specific requirements or preferences..."></textarea>
             </div>
-            <div class="col-md-3 text-center">
-                <h5>Educators & Community Groups</h5>
-                <p>Organizations dedicated to environmental education and sustainable gardening.</p>
+
+            <!-- Submit Button -->
+            <div class="text-center">
+                <button type="submit" class="btn btn-main">Register Now</button>
             </div>
-        </div>
+        </form>
     </div>
 </section>
 
