@@ -32,42 +32,42 @@ function generateMealPlan() {
             Dinner: document.getElementById("tuesdayDinner").value
         },
         Wednesday: {
-            Breakfast: document.getElementById("tuesdayBreakfast").value,
-            Snack: document.getElementById("tuesdaySnack").value,
-            Lunch: document.getElementById("tuesdayLunch").value,
-            SecondSnack: document.getElementById("tuesdaySecondSnack").value,
-            Dinner: document.getElementById("tuesdayDinner").value
+            Breakfast: document.getElementById("wednesdayBreakfast").value,
+            Snack: document.getElementById("wednesdaySnack").value,
+            Lunch: document.getElementById("wednesdayLunch").value,
+            SecondSnack: document.getElementById("wednesdaySecondSnack").value,
+            Dinner: document.getElementById("wednesdayDinner").value
         },
         Thursday: {
-            Breakfast: document.getElementById("tuesdayBreakfast").value,
-            Snack: document.getElementById("tuesdaySnack").value,
-            Lunch: document.getElementById("tuesdayLunch").value,
-            SecondSnack: document.getElementById("tuesdaySecondSnack").value,
-            Dinner: document.getElementById("tuesdayDinner").value
+            Breakfast: document.getElementById("thursdayBreakfast").value,
+            Snack: document.getElementById("thursdaySnack").value,
+            Lunch: document.getElementById("thursdayLunch").value,
+            SecondSnack: document.getElementById("thursdaySecondSnack").value,
+            Dinner: document.getElementById("thursdayDinner").value
         },
         Friday: {
-            Breakfast: document.getElementById("tuesdayBreakfast").value,
-            Snack: document.getElementById("tuesdaySnack").value,
-            Lunch: document.getElementById("tuesdayLunch").value,
-            SecondSnack: document.getElementById("tuesdaySecondSnack").value,
-            Dinner: document.getElementById("tuesdayDinner").value
+            Breakfast: document.getElementById("fridayBreakfast").value,
+            Snack: document.getElementById("fridaySnack").value,
+            Lunch: document.getElementById("fridayLunch").value,
+            SecondSnack: document.getElementById("fridaySecondSnack").value,
+            Dinner: document.getElementById("fridayDinner").value
         },
         Saturday: {
-            Breakfast: document.getElementById("tuesdayBreakfast").value,
-            Snack: document.getElementById("tuesdaySnack").value,
-            Lunch: document.getElementById("tuesdayLunch").value,
-            SecondSnack: document.getElementById("tuesdaySecondSnack").value,
-            Dinner: document.getElementById("tuesdayDinner").value
+            Breakfast: document.getElementById("saturdayBreakfast").value,
+            Snack: document.getElementById("saturdaySnack").value,
+            Lunch: document.getElementById("saturdayLunch").value,
+            SecondSnack: document.getElementById("saturdaySecondSnack").value,
+            Dinner: document.getElementById("saturdayDinner").value
         },
         Sunday: {
-            Breakfast: document.getElementById("tuesdayBreakfast").value,
-            Snack: document.getElementById("tuesdaySnack").value,
-            Lunch: document.getElementById("tuesdayLunch").value,
-            SecondSnack: document.getElementById("tuesdaySecondSnack").value,
-            Dinner: document.getElementById("tuesdayDinner").value
+            Breakfast: document.getElementById("sundayBreakfast").value,
+            Snack: document.getElementById("sundaySnack").value,
+            Lunch: document.getElementById("sundayLunch").value,
+            SecondSnack: document.getElementById("sundaySecondSnack").value,
+            Dinner: document.getElementById("sundayDinner").value
         }
     };
-
+    
     // Create HTML content for html on-the-fly
     let mealPlanContent = `
         <html>
